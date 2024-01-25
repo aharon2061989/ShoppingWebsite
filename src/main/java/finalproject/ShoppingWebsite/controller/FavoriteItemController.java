@@ -39,9 +39,7 @@ public class FavoriteItemController {
 
     @GetMapping("/all-favorite-items/{userId}")
     @CrossOrigin
-    public ResponseEntity<List<FavoriteItemResponse>> getAllFavoriteItemsByUserId(@RequestParam(value = "Authorization")String token, @PathVariable Long userId) {
-        String jwt = token.substring(7);
-        String username = jwtUtil.extractUsername(jwt);
+    public ResponseEntity<List<FavoriteItemResponse>> getAllFavoriteItemsByUserId(@PathVariable Long userId) {
         List<FavoriteItemResponse> favoriteItemResponses = favoriteItemService.getAllFavoriteItemsByUserId(userId);
         return ResponseEntity.ok(favoriteItemResponses);
     }

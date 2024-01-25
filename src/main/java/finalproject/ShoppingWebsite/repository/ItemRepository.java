@@ -11,4 +11,6 @@ public interface ItemRepository {
 
     Integer getStockQuantity(Long itemId);
     List<Item> getListOfAllItems();
+
+    List<Item> searchItemsByName(String searchTerm);
 }

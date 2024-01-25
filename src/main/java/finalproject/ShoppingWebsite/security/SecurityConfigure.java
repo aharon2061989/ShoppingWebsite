@@ -35,6 +35,8 @@ public class SecurityConfigure extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/api/public/authenticate").permitAll()
                 .antMatchers("/api/public/CustomUser/findUser/**").permitAll()
+                .antMatchers("/favorite-item/all-favorite-items/**").permitAll()
+                .antMatchers("/item/search-items").permitAll()
                 .antMatchers("/item/all-items").permitAll()
                 .antMatchers("/api/public/CustomUser/create").permitAll()
                 .antMatchers("/h2-console/**").permitAll()

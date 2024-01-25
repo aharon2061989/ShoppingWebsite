@@ -217,7 +217,7 @@ public class OrderServiceImpl implements OrderService {
             int quantityInOrder = orderItem.getQuantity();
 
             if (item.getStockQuantity() < quantityInOrder){
-                throw new RuntimeException("Insufficient stock for item: " + item.getItemId());
+                throw new Error("Insufficient stock for item: " + item.getItemId());
             }
             int newStockQuantity = item.getStockQuantity() - quantityInOrder;
             itemRepository.updateItemStockQuantity(item, newStockQuantity);

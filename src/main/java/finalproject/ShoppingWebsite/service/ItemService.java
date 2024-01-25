@@ -10,4 +10,6 @@ public interface ItemService {
     Integer getStockQuantity(Long itemId);
 
     List<Item> getListOfAllItems();
+
+    List<Item> searchItemsByName(String searchTerm);
 }

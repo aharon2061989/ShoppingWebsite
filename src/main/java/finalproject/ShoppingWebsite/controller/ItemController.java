@@ -64,6 +64,16 @@ public class ItemController {
         return ResponseEntity.ok(items);
     }
 
+    @GetMapping("/search-items")
+    @CrossOrigin
+    public ResponseEntity<List<Item>> searchItemsByName(@RequestParam String searchTerm) {
+        List<Item> items = itemService.searchItemsByName(searchTerm);
 
+        if (!items.isEmpty()) {
+            return new ResponseEntity<>(items, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
 }

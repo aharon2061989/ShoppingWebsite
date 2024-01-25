@@ -60,10 +60,10 @@ INSERT INTO user_details(first_name, last_name, email, phone_number, city, count
 ('reef', 'ben shimol', 'reef@gmail.com', 0535550331, 'eilat', 'israel', 'habracha 12/5' , 'reef', 'Reef2018!');
 
 INSERT INTO item_details(item_title, photo_url, item_price, stock_quantity) VALUES
-('Inter Miami Leonel Messi Shirt', 'https://bit.ly/3SD332W', 80.00, 25),
+('Inter Miami Leonel Messi Shirt', 'https://bit.ly/3SD332W', 80.00, 5),
 ('Al Naser Cristiano Ronaldo Shirt', 'https://footdealer.co/wp-content/uploads/2023/08/MAILLOT-AL-NASSR-RONALDO-DOMICILE-2023-2024-1-768x713.jpg', 80.00, 25),
-('Al Hilal Neymar JR Shirt', 'https://bit.ly/3Swij1z', 70.00, 25),
-('PSG Kylian Mbappe Shirt', 'https://bit.ly/3SunFdK', 70.00, 25),
+('Al Hilal Neymar JR Shirt', 'https://bit.ly/3Swij1z', 70.00, 2),
+('PSG Kylian Mbappe Shirt', 'https://bit.ly/3SunFdK', 70.00, 2),
 ('Leonel Messi Shoes', 'https://tinyurl.com/5562m44v', 130.00, 15),
 ('Cristiano Ronaldo shoes', 'https://bit.ly/47eSpE0', 130.00, 15),
 ('Neymar JR Shoes', 'https://bit.ly/3u2JUxk', 110.00, 15),
@@ -71,4 +71,8 @@ INSERT INTO item_details(item_title, photo_url, item_price, stock_quantity) VALU
 ('Brazil Selection Scarf', 'https://bit.ly/4693J3k', 30.00, 50),
 ('Spain Selection Scarf', 'https://bit.ly/3QNK3xx', 30.00, 50),
 ('England Selection Scarf', 'https://m.media-amazon.com/images/I/91RuQLJib6L.jpg', 30.00, 50),
-('Argentina Selection Scarf', 'https://ae01.alicdn.com/kf/S84ee575f748b4ef0810d1e90ff45a4682.png_640x640.png_.webp', 30.00, 50);
+('Argentina Selection Scarf', 'https://ae01.alicdn.com/kf/S84ee575f748b4ef0810d1e90ff45a4682.png_640x640.png_.webp', 30.00, 50),
+('La Liga Official Ball', 'https://bit.ly/3S4D8zi', 50.00, 100),
+('Premier League Official Ball', 'https://bit.ly/3SsfwGl', 50.00, 100),
+('Bundesliga Official Ball', 'https://bit.ly/3UgozeO', 50.00, 100),
+('Champions League official Ball', 'https://bit.ly/42bfSV4', 50.00, 100);

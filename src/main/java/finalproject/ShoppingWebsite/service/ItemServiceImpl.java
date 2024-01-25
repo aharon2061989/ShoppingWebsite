@@ -38,4 +38,11 @@ public class ItemServiceImpl implements ItemService{
     public List<Item> getListOfAllItems() {
         return itemRepository.getListOfAllItems();
     }
+
+    @Override
+    public List<Item> searchItemsByName(String searchTerm) {
+        return itemRepository.searchItemsByName(searchTerm);
+    }
 }
+
+

@@ -7,6 +7,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Repository
@@ -54,6 +56,16 @@ public class ItemRepositoryImpl implements ItemRepository{
         }
         catch (EmptyResultDataAccessException e){
             return null;
+        }
+    }
+
+    @Override
+    public List<Item> searchItemsByName(String searchTerm) {
+        String sql = "SELECT * FROM " + ITEM_DETAILS_TABLE_NAME + " WHERE item_title LIKE ?";
+        try {
+            return jdbcTemplate.query(sql, itemMapper, "%" + searchTerm + "%");
+        } catch (EmptyResultDataAccessException e) {
+            return new ArrayList<>();
         }
     }
 }
