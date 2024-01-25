@@ -60,10 +60,10 @@ INSERT INTO user_details(first_name, last_name, email, phone_number, city, count
 ('reef', 'ben shimol', 'reef@gmail.com', 0535550331, 'eilat', 'israel', 'habracha 12/5' , 'reef', 'Reef2018!');
 
 INSERT INTO item_details(item_title, photo_url, item_price, stock_quantity) VALUES
-('Inter Miami Leonel Messi Shirt', 'https://bit.ly/3SD332W', 80.00, 5),
+('Inter Miami Leonel Messi Shirt', 'https://bit.ly/3SD332W', 80.00, 25),
 ('Al Naser Cristiano Ronaldo Shirt', 'https://footdealer.co/wp-content/uploads/2023/08/MAILLOT-AL-NASSR-RONALDO-DOMICILE-2023-2024-1-768x713.jpg', 80.00, 25),
-('Al Hilal Neymar JR Shirt', 'https://bit.ly/3Swij1z', 70.00, 2),
-('PSG Kylian Mbappe Shirt', 'https://bit.ly/3SunFdK', 70.00, 2),
+('Al Hilal Neymar JR Shirt', 'https://bit.ly/3Swij1z', 70.00, 25),
+('PSG Kylian Mbappe Shirt', 'https://bit.ly/3SunFdK', 70.00, 25),
 ('Leonel Messi Shoes', 'https://tinyurl.com/5562m44v', 130.00, 15),
 ('Cristiano Ronaldo shoes', 'https://bit.ly/47eSpE0', 130.00, 15),
 ('Neymar JR Shoes', 'https://bit.ly/3u2JUxk', 110.00, 15),
